@@ -7,6 +7,8 @@ import {
   useRecoilValue,
 } from 'recoil';
 
+import TodoList from "./TodoList";
+
 function App() {
   return (
     <RecoilRoot>
@@ -25,6 +27,10 @@ function CharacterCounter() {
     <div>
       <TextInput />
       <CharacterCount />
+      <h2>TodoList</h2>
+      <div>
+        <TodoList></TodoList>
+      </div>
     </div>
   );
 }
